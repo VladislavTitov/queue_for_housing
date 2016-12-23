@@ -1,16 +1,17 @@
 package entities;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class User {
     private final String user_name;
     private final String password;
-    private final LocalDate dateRegistration;
+    private final Date dateRegistration;
 
     public static class Builder{
         private String user_name;
         private String password;
-        private LocalDate dateRegistration;
+        private Date dateRegistration;
 
         public Builder setUserName(String user_name){
             this.user_name = user_name;
@@ -22,7 +23,7 @@ public class User {
             return this;
         }
 
-        public Builder setDateRegistration(LocalDate dateRegistration) {
+        public Builder setDateRegistration(Date dateRegistration) {
             this.dateRegistration = dateRegistration;
             return this;
         }
@@ -47,7 +48,7 @@ public class User {
         return password;
     }
 
-    public LocalDate getDateRegistration() {
+    public Date getDateRegistration() {
         return dateRegistration;
     }
 }

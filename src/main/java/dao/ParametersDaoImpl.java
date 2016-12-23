@@ -100,7 +100,7 @@ public class ParametersDaoImpl implements ParametersDao {
                         (new Child.Builder())
                         .setSurname(rs.getString("child_surname"))
                         .setName(rs.getString("child_name"))
-                        .setPatronymic("child_patronymic")
+                        .setPatronymic(rs.getString("child_patronymic"  ))
                         .build()
                 );
             }
@@ -309,7 +309,7 @@ public class ParametersDaoImpl implements ParametersDao {
     }
 
     @Override
-    public void savePromotions(String userName, Promotions promotions) {
+    public void savePromotions(String userName, Promotions promotions) throws IllegalArgumentException{
         if (userName != null && !userName.equals("")){
         }else {
             throw new IllegalArgumentException("Не введены данные пользователя!");
@@ -325,7 +325,7 @@ public class ParametersDaoImpl implements ParametersDao {
 
             statement.executeQuery();
         } catch (SQLException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             throw new IllegalArgumentException("Не верно ввели данные льгот!");
         }
     }

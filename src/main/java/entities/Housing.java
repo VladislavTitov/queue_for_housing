@@ -3,11 +3,11 @@ package entities;
 import java.sql.Date;
 
 public class Housing implements Entity{
-    private final int condition;
+    private final Integer condition;
     private final Date applicationDate;
 
     public static class Builder{
-        private int condition;
+        private Integer condition;
         private Date applicationDate;
 
 
@@ -32,7 +32,7 @@ public class Housing implements Entity{
     }
 
 
-    public int getCondition() {
+    public Integer getCondition() {
         return condition;
     }
 

@@ -10,7 +10,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-//TODO добавить TokenService
 
 public class QueueFilter implements Filter {
 

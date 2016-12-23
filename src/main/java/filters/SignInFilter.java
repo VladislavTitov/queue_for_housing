@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//TODO добавить TokenService
-
 public class SignInFilter implements Filter {
 
     TokenService tokenService;

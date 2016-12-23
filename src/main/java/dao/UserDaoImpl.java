@@ -29,7 +29,7 @@ public class UserDaoImpl implements UserDao {
 
         try {
             PreparedStatement statement = connection.prepareStatement(
-                    "SELECT user_name, date_registration FROM users WHERE user_name = ?;"
+                    "SELECT user_name, date_registration, deleted FROM users WHERE user_name = ?;"
             );
             statement.setString(1, userName);
             ResultSet rs =  statement.executeQuery();
@@ -37,7 +37,8 @@ public class UserDaoImpl implements UserDao {
             if (rs.next()){
                 secUserBuilder
                         .setUserName(rs.getString("user_name"))
-                        /*.setDateRegistration(rs.getDate("date_application"))*/;
+                        .setDateRegistration(rs.getDate("date_registration"))
+                        .setGranted(rs.getBoolean("deleted"));
             }
 
         } catch (SQLException e) {
@@ -95,7 +96,7 @@ public class UserDaoImpl implements UserDao {
             );
             statement.setString(1, user.getUser_name());
             statement.setString(2, MD5.generateHash(user.getPassword()));
-            statement.setDate(3, Date.valueOf(user.getDateRegistration()));
+            statement.setDate(3, user.getDateRegistration());
 
             statement.executeUpdate();
         } catch (SQLException e) {

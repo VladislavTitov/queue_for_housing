@@ -5,6 +5,8 @@ import entities.User;
 
 public interface UserService {
 
+    boolean isGranted(String userName);
+
     /**
      * проверяем, зарегистрирован ли пользователь в системе
      * @param userName имя пользователя, введенное в поле ввода в форме входа или регистрации
@@ -26,7 +28,6 @@ public interface UserService {
      */
     void save(User user);
 
-    //TODO при реализации поставить заглушку (не реализовано обновление)
     /**
      * обновляет данные пользователя
      * @param user модель пользователя

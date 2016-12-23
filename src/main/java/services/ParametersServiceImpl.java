@@ -72,7 +72,7 @@ public class ParametersServiceImpl implements ParametersService {
     }
 
     @Override
-    public void save(String userName, Entity model) {
+    public void save(String userName, Entity model) throws IllegalArgumentException{
         if (model instanceof Father){
             try {
                 parametersDao.saveFather(userName, (Father) model);

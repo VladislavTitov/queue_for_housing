@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb3d21d4-2ba7-4233-bf07-39df9027ed7f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HousingQueue.iml" afterPath="$PROJECT_DIR$/HousingQueue.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/drivers.properties" afterPath="$PROJECT_DIR$/src/main/resources/drivers.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/FullEntity.java" afterPath="$PROJECT_DIR$/src/main/java/entities/FullEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/Housing.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Housing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/SecurityUser.java" afterPath="$PROJECT_DIR$/src/main/java/entities/SecurityUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/filters/QueueFilter.java" afterPath="$PROJECT_DIR$/src/main/java/filters/QueueFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/filters/SignInFilter.java" afterPath="$PROJECT_DIR$/src/main/java/filters/SignInFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SignInServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SignInServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SignOutServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SignOutServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SignUpServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SignUpServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SuccessServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SuccessServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery-3.1.1.js" afterPath="$PROJECT_DIR$/web/js/jquery-3.1.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin.jsp" afterPath="$PROJECT_DIR$/web/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/queue.jsp" afterPath="$PROJECT_DIR$/web/queue.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/success.jsp" afterPath="$PROJECT_DIR$/web/success.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,10 +100,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="promotions" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
     <PATH>
       <PATH_ELEMENT>
@@ -98,95 +114,54 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
+    </PATH>
+    <PATH>
       <PATH_ELEMENT>
-        <option name="myItemId" value="fathers" />
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="qfh@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="QueueServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="AdminDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="515">
+              <caret line="107" column="73" lean-forward="false" selection-start-line="107" selection-start-column="73" selection-end-line="107" selection-end-column="73" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1482274544910" expanded="true" signature="754:787" ph="SELECT * FRO... sorted_out_of_queue" />
+                <marker date="1482274544910" expanded="true" signature="1642:1677" ph="SELECT * FRO... sorted_first_of_queue" />
+                <marker date="1482274544910" expanded="true" signature="2532:2564" ph="SELECT * FRO... sorted_usual_queue" />
+                <marker date="1482274544910" expanded="true" signature="3413:3440" ph="SELECT * FRO... deleted_queue" />
+                <marker date="1482274544910" expanded="true" signature="4303:4354" ph="UPDATE users... " />
+                <marker date="1482274544910" expanded="true" signature="4719:4756" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testqfh.public.children" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.children">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="AdminDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java">
+      <file leaf-file-name="ParametersDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParametersDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1068">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1482095419715" expanded="true" signature="809:875" ph="SELECT user_... users" />
-                <marker date="1482095419715" expanded="true" signature="1914:1947" ph="SELECT user_... users" />
-                <marker date="1482095419715" expanded="true" signature="1914:1948" ph="SELECT user_... users" />
-                <marker date="1482095419715" expanded="true" signature="1914:1978" ph="SELECT user_... users" />
-                <marker date="1482095419715" expanded="true" signature="2822:2874" ph="INSERT INTO users... " />
-                <marker date="1482095419715" expanded="true" signature="3517:3554" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignUpServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="43" column="128" lean-forward="false" selection-start-line="43" selection-start-column="128" selection-end-line="43" selection-end-column="128" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testqfh.public.users" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-88">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParametersServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="95" column="35" lean-forward="false" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -194,12 +169,11 @@
       <file leaf-file-name="ParametersDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="267" column="16" lean-forward="false" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="16" />
+            <state relative-caret-position="308">
+              <caret line="102" column="72" lean-forward="false" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
               <folding>
                 <element signature="method#findFather#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#findMother#0;class#ParametersDaoImpl#0" expanded="false" />
-                <element signature="method#findChildren#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#findWish#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#findHousing#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#findPromotions#0;class#ParametersDaoImpl#0" expanded="false" />
@@ -207,7 +181,6 @@
                 <element signature="method#saveMother#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#saveChild#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#saveHousing#0;class#ParametersDaoImpl#0" expanded="false" />
-                <element signature="method#savePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#updateFather#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#updateMother#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#updateChild#0;class#ParametersDaoImpl#0" expanded="false" />
@@ -221,64 +194,91 @@
                 <element signature="method#deleteWishes#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#deleteHousing#0;class#ParametersDaoImpl#0" expanded="false" />
                 <element signature="method#deletePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
-                <marker date="1482109368862" expanded="true" signature="932:1026" ph="SELECT * FRO... fathers" />
-                <marker date="1482109368862" expanded="true" signature="932:1032" ph="SELECT * FRO... fathers" />
-                <marker date="1482109368862" expanded="true" signature="968:1025" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="1927:2021" ph="SELECT * FRO... mothers" />
-                <marker date="1482109368862" expanded="true" signature="1927:2027" ph="SELECT * FRO... mothers" />
-                <marker date="1482109368862" expanded="true" signature="1963:2020" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="2925:3020" ph="SELECT * FRO... children" />
-                <marker date="1482109368862" expanded="true" signature="2925:3026" ph="SELECT * FRO... children" />
-                <marker date="1482109368862" expanded="true" signature="2962:3019" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="3995:4094" ph="SELECT * FRO... wishes" />
-                <marker date="1482109368862" expanded="true" signature="4030:4087" ph="SELECT users... users" />
-                <marker date="1482109368862" expanded="true" signature="5082:5182" ph="SELECT * FRO... housing" />
-                <marker date="1482109368862" expanded="true" signature="5118:5175" ph="SELECT users... users" />
-                <marker date="1482109368862" expanded="true" signature="6027:6130" ph="SELECT * FRO... promotions" />
-                <marker date="1482109368862" expanded="true" signature="6066:6123" ph="SELECT users... users" />
-                <marker date="1482109368862" expanded="true" signature="7006:7035" ph="SELECT fathe... " />
-                <marker date="1482109368862" expanded="true" signature="7817:7846" ph="SELECT mothe... " />
-                <marker date="1482109368862" expanded="true" signature="8627:8655" ph="SELECT child... " />
-                <marker date="1482109368862" expanded="true" signature="9433:9463" ph="SELECT wish_... " />
-                <marker date="1482109368862" expanded="true" signature="10307:10334" ph="SELECT housi... " />
-                <marker date="1482109368862" expanded="true" signature="11090:11123" ph="SELECT promo... " />
-                <marker date="1482109368862" expanded="true" signature="11948:12064" ph="UPDATE fathe... " />
-                <marker date="1482109368862" expanded="true" signature="11948:12130" ph="UPDATE fathe... " />
-                <marker date="1482109368862" expanded="true" signature="12084:12129" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="12918:13100" ph="UPDATE mothe... " />
-                <marker date="1482109368862" expanded="true" signature="13054:13099" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="13887:14068" ph="UPDATE child... " />
-                <marker date="1482109368862" expanded="true" signature="14022:14067" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="14852:15033" ph="UPDATE wishe... " />
-                <marker date="1482109368862" expanded="true" signature="14987:15032" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="15883:16042" ph="UPDATE housi... " />
-                <marker date="1482109368862" expanded="true" signature="15996:16041" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="16804:16986" ph="UPDATE promo... " />
-                <marker date="1482109368862" expanded="true" signature="16940:16985" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="17800:17891" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="17845:17890" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="18411:18502" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="18456:18501" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="19034:19253" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="19081:19126" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="19944:20037" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="19991:20036" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="20557:20646" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="20600:20645" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="21167:21258" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="21212:21257" ph="SELECT user_... users" />
-                <marker date="1482109368862" expanded="true" signature="21782:21879" ph="DELETE FROM " />
-                <marker date="1482109368862" expanded="true" signature="21833:21878" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="932:1026" ph="SELECT * FRO... fathers" />
+                <marker date="1482312754968" expanded="true" signature="932:1032" ph="SELECT * FRO... fathers" />
+                <marker date="1482312754968" expanded="true" signature="968:1025" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="1927:2021" ph="SELECT * FRO... mothers" />
+                <marker date="1482312754968" expanded="true" signature="1927:2027" ph="SELECT * FRO... mothers" />
+                <marker date="1482312754968" expanded="true" signature="1963:2020" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="2925:3020" ph="SELECT * FRO... children" />
+                <marker date="1482312754968" expanded="true" signature="2925:3026" ph="SELECT * FRO... children" />
+                <marker date="1482312754968" expanded="true" signature="2962:3019" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="4011:4110" ph="SELECT * FRO... wishes" />
+                <marker date="1482312754968" expanded="true" signature="4046:4103" ph="SELECT users... users" />
+                <marker date="1482312754968" expanded="true" signature="5098:5198" ph="SELECT * FRO... housing" />
+                <marker date="1482312754968" expanded="true" signature="5134:5191" ph="SELECT users... users" />
+                <marker date="1482312754968" expanded="true" signature="6043:6146" ph="SELECT * FRO... promotions" />
+                <marker date="1482312754968" expanded="true" signature="6082:6139" ph="SELECT users... users" />
+                <marker date="1482312754968" expanded="true" signature="7022:7051" ph="SELECT fathe... " />
+                <marker date="1482312754968" expanded="true" signature="7833:7862" ph="SELECT mothe... " />
+                <marker date="1482312754968" expanded="true" signature="8643:8671" ph="SELECT child... " />
+                <marker date="1482312754968" expanded="true" signature="9449:9479" ph="SELECT wish_... " />
+                <marker date="1482312754968" expanded="true" signature="10323:10350" ph="SELECT housi... " />
+                <marker date="1482312754968" expanded="true" signature="11137:11170" ph="SELECT promo... " />
+                <marker date="1482312754968" expanded="true" signature="11997:12113" ph="UPDATE fathe... " />
+                <marker date="1482312754968" expanded="true" signature="11997:12179" ph="UPDATE fathe... " />
+                <marker date="1482312754968" expanded="true" signature="12133:12178" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="12967:13149" ph="UPDATE mothe... " />
+                <marker date="1482312754968" expanded="true" signature="13103:13148" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="13936:14117" ph="UPDATE child... " />
+                <marker date="1482312754968" expanded="true" signature="14071:14116" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="14901:15082" ph="UPDATE wishe... " />
+                <marker date="1482312754968" expanded="true" signature="15036:15081" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="15932:16091" ph="UPDATE housi... " />
+                <marker date="1482312754968" expanded="true" signature="16045:16090" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="16853:17035" ph="UPDATE promo... " />
+                <marker date="1482312754968" expanded="true" signature="16989:17034" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="17849:17940" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="17894:17939" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="18460:18551" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="18505:18550" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="19083:19302" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="19130:19175" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="19993:20086" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="20040:20085" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="20606:20695" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="20649:20694" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="21216:21307" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="21261:21306" ph="SELECT user_... users" />
+                <marker date="1482312754968" expanded="true" signature="21831:21928" ph="DELETE FROM " />
+                <marker date="1482312754968" expanded="true" signature="21882:21927" ph="SELECT user_... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queue.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/queue.jsp">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5323">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="806">
+              <caret line="98" column="60" lean-forward="false" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
+              <folding>
+                <marker date="1482251051218" expanded="true" signature="809:884" ph="SELECT user_... users" />
+                <marker date="1482251051218" expanded="true" signature="1982:2015" ph="SELECT user_... users" />
+                <marker date="1482251051218" expanded="true" signature="1982:2016" ph="SELECT user_... users" />
+                <marker date="1482251051218" expanded="true" signature="1982:2046" ph="SELECT user_... users" />
+                <marker date="1482251051218" expanded="true" signature="2890:2942" ph="INSERT INTO users... " />
+                <marker date="1482251051218" expanded="true" signature="3571:3608" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drivers.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/drivers.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -294,6 +294,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>kindergarden</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -305,15 +310,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDao2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/QueueDao2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/QueueService2.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/UserService2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/MD5.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/TokenService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/TokenDao.java" />
@@ -322,35 +322,45 @@
         <option value="$PROJECT_DIR$/src/main/java/entities/Father.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Mother.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Wish.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/SecurityUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/IllegalDateException.java" />
         <option value="$PROJECT_DIR$/src/main/java/factories/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/factories/ServiceFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Housing.java" />
         <option value="/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/routine/token_ins.(varchar,varchar).sql" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/EntitiesEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Promotions.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Child.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ParametersDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/ParametersService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/factories/ConnectionToDb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Housing.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/SignInServlet.java" />
+        <option value="$PROJECT_DIR$/web/queue.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/filters/QueueFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/filters/SignInFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/SignInServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/SuccessServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/factories/ConnectionToDb.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/drivers.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/SecurityUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/FullEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/SignUpServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/SuccessServlet.java" />
+        <option value="$PROJECT_DIR$/web/success.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/drivers.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/SignOutServlet.java" />
+        <option value="$PROJECT_DIR$/web/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -409,8 +419,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -453,6 +461,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HousingQueue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HousingQueue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -702,6 +728,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -716,9 +744,8 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="services" />
-      <recent name="dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\HousingQueue\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Programming\HousingQueue\src\main\java\filters" />
@@ -731,8 +758,9 @@
       <recent name="services" />
       <recent name="entities" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Programming\HousingQueue\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="services" />
+      <recent name="dao" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
@@ -984,6 +1012,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1105,6 +1134,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1207,11 +1242,16 @@
       <option name="presentableId" value="Default" />
       <updated>1482020172432</updated>
       <workItem from="1482020177358" duration="52553000" />
+      <workItem from="1482121381282" duration="631000" />
+      <workItem from="1482140536895" duration="17166000" />
+      <workItem from="1482211944492" duration="5233000" />
+      <workItem from="1482235347000" duration="31234000" />
+      <workItem from="1482309970230" duration="2400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52553000" />
+    <option name="totallyTimeSpent" value="109217000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1229,35 +1269,35 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16630901" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27950644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17274678" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18454936" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1268,7 +1308,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1277,487 +1317,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/SecurityUser.java">
+    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/routine/promotions_ins.(varchar,boolean,boolean,boolean).sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/IllegalDateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Housing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="38" column="15" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/TokenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/routine/father_ins.(varchar,varchar,varchar,varchar).sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/routine/mother_ins.(varchar,varchar,varchar,varchar).sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/routine/token_ins.(varchar,varchar).sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/2f35e4a7-db08-4497-8dd2-f9cbad659fe6">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>2f35e4a7-db08-4497-8dd2-f9cbad659fe6</OriginalElement>
-          <nodes>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.children</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.unsorted_queue</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.fathers</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.wishes</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.tokens</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.deleted_queue</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.promotions</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.sorted_usual_queue</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.sorted_out_of_queue</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.users</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.housing</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.sorted_first_of_queue</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.unsorted_normal_queue</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.mothers</node>
-            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.districts</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5944954128440367" x="1012.6806632213616" y="1556.4024906689638" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/factories/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/factories/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/EntitiesEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Promotions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="984" column="48" lean-forward="true" selection-start-line="984" selection-start-column="48" selection-end-line="984" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Child.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#235#236#0" expanded="false" />
-            <element signature="e#262#263#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filters/SignInFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="46" column="74" lean-forward="false" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignOutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignInServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="47" column="95" lean-forward="false" selection-start-line="47" selection-start-column="95" selection-end-line="47" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SuccessServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/TokenServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filters/QueueFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="20" column="70" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TokenDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1482081640909" expanded="true" signature="683:705" ph="SELECT token... " />
-            <marker date="1482081640909" expanded="true" signature="1204:1289" ph="SELECT token... tokens" />
-            <marker date="1482081640909" expanded="true" signature="1243:1282" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/ParametersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParametersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="95" column="35" lean-forward="false" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="267" column="16" lean-forward="false" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="16" />
-          <folding>
-            <element signature="method#findFather#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#findMother#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#findChildren#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#findWish#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#findHousing#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#findPromotions#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#saveFather#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#saveMother#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#saveChild#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#saveHousing#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#savePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#updateFather#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#updateMother#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#updateChild#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#updateWishes#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#updateHousing#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#updatePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deleteFather#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deleteMother#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deleteChild#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deleteChildren#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deleteWishes#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deleteHousing#0;class#ParametersDaoImpl#0" expanded="false" />
-            <element signature="method#deletePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
-            <marker date="1482109368862" expanded="true" signature="932:1026" ph="SELECT * FRO... fathers" />
-            <marker date="1482109368862" expanded="true" signature="932:1032" ph="SELECT * FRO... fathers" />
-            <marker date="1482109368862" expanded="true" signature="968:1025" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="1927:2021" ph="SELECT * FRO... mothers" />
-            <marker date="1482109368862" expanded="true" signature="1927:2027" ph="SELECT * FRO... mothers" />
-            <marker date="1482109368862" expanded="true" signature="1963:2020" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="2925:3020" ph="SELECT * FRO... children" />
-            <marker date="1482109368862" expanded="true" signature="2925:3026" ph="SELECT * FRO... children" />
-            <marker date="1482109368862" expanded="true" signature="2962:3019" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="3995:4094" ph="SELECT * FRO... wishes" />
-            <marker date="1482109368862" expanded="true" signature="4030:4087" ph="SELECT users... users" />
-            <marker date="1482109368862" expanded="true" signature="5082:5182" ph="SELECT * FRO... housing" />
-            <marker date="1482109368862" expanded="true" signature="5118:5175" ph="SELECT users... users" />
-            <marker date="1482109368862" expanded="true" signature="6027:6130" ph="SELECT * FRO... promotions" />
-            <marker date="1482109368862" expanded="true" signature="6066:6123" ph="SELECT users... users" />
-            <marker date="1482109368862" expanded="true" signature="7006:7035" ph="SELECT fathe... " />
-            <marker date="1482109368862" expanded="true" signature="7817:7846" ph="SELECT mothe... " />
-            <marker date="1482109368862" expanded="true" signature="8627:8655" ph="SELECT child... " />
-            <marker date="1482109368862" expanded="true" signature="9433:9463" ph="SELECT wish_... " />
-            <marker date="1482109368862" expanded="true" signature="10307:10334" ph="SELECT housi... " />
-            <marker date="1482109368862" expanded="true" signature="11090:11123" ph="SELECT promo... " />
-            <marker date="1482109368862" expanded="true" signature="11948:12064" ph="UPDATE fathe... " />
-            <marker date="1482109368862" expanded="true" signature="11948:12130" ph="UPDATE fathe... " />
-            <marker date="1482109368862" expanded="true" signature="12084:12129" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="12918:13100" ph="UPDATE mothe... " />
-            <marker date="1482109368862" expanded="true" signature="13054:13099" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="13887:14068" ph="UPDATE child... " />
-            <marker date="1482109368862" expanded="true" signature="14022:14067" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="14852:15033" ph="UPDATE wishe... " />
-            <marker date="1482109368862" expanded="true" signature="14987:15032" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="15883:16042" ph="UPDATE housi... " />
-            <marker date="1482109368862" expanded="true" signature="15996:16041" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="16804:16986" ph="UPDATE promo... " />
-            <marker date="1482109368862" expanded="true" signature="16940:16985" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="17800:17891" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="17845:17890" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="18411:18502" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="18456:18501" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="19034:19253" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="19081:19126" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="19944:20037" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="19991:20036" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="20557:20646" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="20600:20645" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="21167:21258" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="21212:21257" ph="SELECT user_... users" />
-            <marker date="1482109368862" expanded="true" signature="21782:21879" ph="DELETE FROM " />
-            <marker date="1482109368862" expanded="true" signature="21833:21878" ph="SELECT user_... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.districts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.fathers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.housing">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.mothers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.promotions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1770,6 +1340,255 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/ParametersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2222">
+          <caret line="107" column="35" lean-forward="false" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#254#255#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#7678#7679#0" expanded="false" />
+            <element signature="e#7736#7737#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Housing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding>
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#796#797#0" expanded="false" />
+            <element signature="e#828#829#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.mothers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.districts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.housing">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2882">
+          <caret line="189" column="17" lean-forward="true" selection-start-line="189" selection-start-column="17" selection-end-line="189" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filters/SignInFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filters/QueueFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/view/sorted_usual_queue.sql">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/view/sorted_first_of_queue.sql">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/SecurityUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="e#1210#1211#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Wish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/FullEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="58" column="11" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+          <folding>
+            <element signature="e#2087#2088#0" expanded="false" />
+            <element signature="e#2116#2117#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignUpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="44" column="141" lean-forward="false" selection-start-line="44" selection-start-column="141" selection-end-line="44" selection-end-column="141" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="99" column="21" lean-forward="false" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#322#323#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/view/sorted_out_of_queue.sql">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f717e0a6-1575-407a-bded-387e8833a2d6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78fa97c/7fc5b1f9-db48-4931-83c8-6fd7f9fa1b74/testqfh.public.users" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7fc5b1f9-db48-4931-83c8-6fd7f9fa1b74/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.promotions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/queue.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="248" column="17" lean-forward="false" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1787,13 +1606,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignUpServlet.java">
+    <entry file="dbDummy://dbtable:/f78fa97c/f717e0a6-1575-407a-bded-387e8833a2d6/qfh.public.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/testqfh.public.fathers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="43" column="128" lean-forward="false" selection-start-line="43" selection-start-column="128" selection-end-line="43" selection-end-column="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="361">
+          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1810,51 +1651,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/factories/ConnectionToDb.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SuccessServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="26" column="120" lean-forward="false" selection-start-line="26" selection-start-column="120" selection-end-line="26" selection-end-column="120" />
+        <state relative-caret-position="351">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/drivers.properties">
+    <entry file="file://$PROJECT_DIR$/web/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="219">
+          <caret line="61" column="6" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="61" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignInServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="87" column="41" lean-forward="false" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+        <state relative-caret-position="294">
+          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/queue.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SignOutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5323">
+        <state relative-caret-position="198">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="107" column="73" lean-forward="false" selection-start-line="107" selection-start-column="73" selection-end-line="107" selection-end-column="73" />
+          <folding>
+            <marker date="1482274544910" expanded="true" signature="754:787" ph="SELECT * FRO... sorted_out_of_queue" />
+            <marker date="1482274544910" expanded="true" signature="1642:1677" ph="SELECT * FRO... sorted_first_of_queue" />
+            <marker date="1482274544910" expanded="true" signature="2532:2564" ph="SELECT * FRO... sorted_usual_queue" />
+            <marker date="1482274544910" expanded="true" signature="3413:3440" ph="SELECT * FRO... deleted_queue" />
+            <marker date="1482274544910" expanded="true" signature="4303:4354" ph="UPDATE users... " />
+            <marker date="1482274544910" expanded="true" signature="4719:4756" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParametersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/routine/father_ins.(varchar,varchar,varchar,varchar).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1068">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1482095419715" expanded="true" signature="809:875" ph="SELECT user_... users" />
-            <marker date="1482095419715" expanded="true" signature="1914:1947" ph="SELECT user_... users" />
-            <marker date="1482095419715" expanded="true" signature="1914:1948" ph="SELECT user_... users" />
-            <marker date="1482095419715" expanded="true" signature="1914:1978" ph="SELECT user_... users" />
-            <marker date="1482095419715" expanded="true" signature="2822:2874" ph="INSERT INTO users... " />
-            <marker date="1482095419715" expanded="true" signature="3517:3554" ph="DELETE FROM " />
-          </folding>
+    <entry file="uml://DATABASE/2f35e4a7-db08-4497-8dd2-f9cbad659fe6">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>2f35e4a7-db08-4497-8dd2-f9cbad659fe6</OriginalElement>
+          <nodes>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.children</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.unsorted_queue</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.fathers</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.wishes</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.tokens</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.deleted_queue</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.promotions</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.users</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.sorted_out_of_queue</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.sorted_usual_queue</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.sorted_first_of_queue</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.housing</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.VIEW:testqfh.public.unsorted_normal_queue</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.mothers</node>
+            <node x="" y="">2f35e4a7-db08-4497-8dd2-f9cbad659fe6.TABLE:testqfh.public.districts</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6539835828102366" x="800.9362601664399" y="1456.4076036512106" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
@@ -1871,13 +1786,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/QueueServlet.java">
+    <entry file="dbSrc:///f78fa97c/2f35e4a7-db08-4497-8dd2-f9cbad659fe6/database/testqfh/schema/public/view/deleted_queue.sql">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/drivers.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="22">
+          <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ParametersDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="102" column="72" lean-forward="false" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#findFather#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#findMother#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#findWish#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#findHousing#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#findPromotions#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#saveFather#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#saveMother#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#saveChild#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#saveHousing#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#updateFather#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#updateMother#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#updateChild#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#updateWishes#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#updateHousing#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#updatePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deleteFather#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deleteMother#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deleteChild#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deleteChildren#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deleteWishes#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deleteHousing#0;class#ParametersDaoImpl#0" expanded="false" />
+            <element signature="method#deletePromotions#0;class#ParametersDaoImpl#0" expanded="false" />
+            <marker date="1482312754968" expanded="true" signature="932:1026" ph="SELECT * FRO... fathers" />
+            <marker date="1482312754968" expanded="true" signature="932:1032" ph="SELECT * FRO... fathers" />
+            <marker date="1482312754968" expanded="true" signature="968:1025" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="1927:2021" ph="SELECT * FRO... mothers" />
+            <marker date="1482312754968" expanded="true" signature="1927:2027" ph="SELECT * FRO... mothers" />
+            <marker date="1482312754968" expanded="true" signature="1963:2020" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="2925:3020" ph="SELECT * FRO... children" />
+            <marker date="1482312754968" expanded="true" signature="2925:3026" ph="SELECT * FRO... children" />
+            <marker date="1482312754968" expanded="true" signature="2962:3019" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="4011:4110" ph="SELECT * FRO... wishes" />
+            <marker date="1482312754968" expanded="true" signature="4046:4103" ph="SELECT users... users" />
+            <marker date="1482312754968" expanded="true" signature="5098:5198" ph="SELECT * FRO... housing" />
+            <marker date="1482312754968" expanded="true" signature="5134:5191" ph="SELECT users... users" />
+            <marker date="1482312754968" expanded="true" signature="6043:6146" ph="SELECT * FRO... promotions" />
+            <marker date="1482312754968" expanded="true" signature="6082:6139" ph="SELECT users... users" />
+            <marker date="1482312754968" expanded="true" signature="7022:7051" ph="SELECT fathe... " />
+            <marker date="1482312754968" expanded="true" signature="7833:7862" ph="SELECT mothe... " />
+            <marker date="1482312754968" expanded="true" signature="8643:8671" ph="SELECT child... " />
+            <marker date="1482312754968" expanded="true" signature="9449:9479" ph="SELECT wish_... " />
+            <marker date="1482312754968" expanded="true" signature="10323:10350" ph="SELECT housi... " />
+            <marker date="1482312754968" expanded="true" signature="11137:11170" ph="SELECT promo... " />
+            <marker date="1482312754968" expanded="true" signature="11997:12113" ph="UPDATE fathe... " />
+            <marker date="1482312754968" expanded="true" signature="11997:12179" ph="UPDATE fathe... " />
+            <marker date="1482312754968" expanded="true" signature="12133:12178" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="12967:13149" ph="UPDATE mothe... " />
+            <marker date="1482312754968" expanded="true" signature="13103:13148" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="13936:14117" ph="UPDATE child... " />
+            <marker date="1482312754968" expanded="true" signature="14071:14116" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="14901:15082" ph="UPDATE wishe... " />
+            <marker date="1482312754968" expanded="true" signature="15036:15081" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="15932:16091" ph="UPDATE housi... " />
+            <marker date="1482312754968" expanded="true" signature="16045:16090" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="16853:17035" ph="UPDATE promo... " />
+            <marker date="1482312754968" expanded="true" signature="16989:17034" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="17849:17940" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="17894:17939" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="18460:18551" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="18505:18550" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="19083:19302" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="19130:19175" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="19993:20086" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="20040:20085" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="20606:20695" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="20649:20694" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="21216:21307" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="21261:21306" ph="SELECT user_... users" />
+            <marker date="1482312754968" expanded="true" signature="21831:21928" ph="DELETE FROM " />
+            <marker date="1482312754968" expanded="true" signature="21882:21927" ph="SELECT user_... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="98" column="60" lean-forward="false" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
+          <folding>
+            <marker date="1482251051218" expanded="true" signature="809:884" ph="SELECT user_... users" />
+            <marker date="1482251051218" expanded="true" signature="1982:2015" ph="SELECT user_... users" />
+            <marker date="1482251051218" expanded="true" signature="1982:2016" ph="SELECT user_... users" />
+            <marker date="1482251051218" expanded="true" signature="1982:2046" ph="SELECT user_... users" />
+            <marker date="1482251051218" expanded="true" signature="2890:2942" ph="INSERT INTO users... " />
+            <marker date="1482251051218" expanded="true" signature="3571:3608" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

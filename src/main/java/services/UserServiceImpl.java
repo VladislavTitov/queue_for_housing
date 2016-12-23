@@ -13,6 +13,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public boolean isGranted(String userName){
+        return userDao.find(userName).isGranted();
+    }
+
+    @Override
     public boolean isRegistered(String userName) {
         if (userDao.find(userName).getUser_name() != null){
             return true;

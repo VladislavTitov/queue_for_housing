@@ -37,7 +37,7 @@ public class SignInServlet extends HttpServlet {
         boolean remember = req.getParameter("remember") != null;
 
         if (user_name.equals("admin@mail.ru") && password.equals("321")){
-            req.getSession().setAttribute("current_user", "admin");
+            req.getSession().setAttribute("admin", "admin");
             resp.sendRedirect("/admin");
         }else if (user_name.equals("") || password.equals("") || !userService.isRegistered(user_name) || !userService.checkPassword(user_name, password)){
             resp.sendRedirect("/signin");

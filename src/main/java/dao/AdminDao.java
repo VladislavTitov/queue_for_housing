@@ -6,18 +6,15 @@ import java.util.List;
 
 public interface AdminDao {
 
-    List<FullEntity> getNormalQueueWithPromotions();
+    List<FullEntity> getNormalUsualQueue();
 
     List<FullEntity> getNormalFirstOfQueue();
 
     List<FullEntity> getNormalOutOfQueue();
 
 
-    List<FullEntity> getDeletedQueueWithPromotions();
+    List<FullEntity> getDeletedQueue();
 
-    List<FullEntity> getDeletedFirstOfQueue();
-
-    List<FullEntity> getDeletedOutOfQueue();
 
     void deleteFromNormalQueue(String userName);
 

@@ -8,7 +8,16 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <resolve-scope>testqfh:public,postgres</resolve-scope>
+      <resolve-scope>testqfh:postgres,public</resolve-scope>
+    </data-source>
+    <data-source name="qfh@localhost" uuid="f717e0a6-1575-407a-bded-387e8833a2d6">
+      <database-info product="PostgreSQL" version="9.6rc1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <resolve-scope>qfh:postgres,public</resolve-scope>
     </data-source>
   </component>
 </project>

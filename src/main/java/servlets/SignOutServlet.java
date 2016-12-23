@@ -12,9 +12,13 @@ public class SignOutServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getSession().removeAttribute("current_user");
-        Cookie cookie = new Cookie("qfhCookie", "");
+        req.getSession().removeAttribute("admin");
+        Cookie cookie = new Cookie("qfhName", "");
+        Cookie cookie1 = new Cookie("qfhToken", "");
         cookie.setMaxAge(0);
+        cookie1.setMaxAge(0);
         resp.addCookie(cookie);
+        resp.addCookie(cookie1);
         resp.sendRedirect("/signin");
     }
 }

@@ -11,12 +11,51 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Map;
 
 public class AdminServlet extends HttpServlet {
 
+    AdminDao adminDao;
+
+    @Override
+    public void init() throws ServletException {
+        adminDao = DaoFactory.getInstance().getAdminDao();
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/admin.jsp").forward(req, resp);
+
+        if (req.getSession().getAttribute("admin")!=null && req.getSession().getAttribute("admin").equals("admin")) {
+
+            req.getSession().setAttribute("out", adminDao.getNormalOutOfQueue());
+            req.getSession().setAttribute("first", adminDao.getNormalFirstOfQueue());
+            req.getSession().setAttribute("usual", adminDao.getNormalUsualQueue());
+            req.getSession().setAttribute("del", adminDao.getDeletedQueue());
+            req.getRequestDispatcher("/admin.jsp").forward(req, resp);
+        }else {
+            resp.sendRedirect("/signin");
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (req.getParameter("mode")!=null&&req.getParameter("mode").equals("normal")){
+            Map<String, String[]> parameters = req.getParameterMap();
+            for (Map.Entry<String, String[]> entry : parameters.entrySet()){
+                if (entry.getKey().equals("mode")){
+                    continue;
+                }
+                adminDao.deleteFromNormalQueue(entry.getValue()[0]);
+            }
+        }else if (req.getParameter("mode")!=null&&req.getParameter("mode").equals("deleted")){
+            Map<String, String[]> parameters = req.getParameterMap();
+            for (Map.Entry<String, String[]> entry : parameters.entrySet()){
+                if (entry.getKey().equals("mode")){
+                    continue;
+                }
+                adminDao.deleteFromDeletedQueue(entry.getValue()[0]);
+            }
+        }
     }
 
     /*@Override

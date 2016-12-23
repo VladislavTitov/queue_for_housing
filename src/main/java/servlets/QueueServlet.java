@@ -1,5 +1,7 @@
 package servlets;
 
+import dao.ParametersDao;
+import factories.DaoFactory;
 import factories.ServiceFactory;
 import entities.*;
 import services.ParametersService;
@@ -16,16 +18,17 @@ import java.util.*;
 public class QueueServlet extends HttpServlet{
 
     ParametersService parametersService;
+    ParametersDao parametersDao;
 
     @Override
     public void init() throws ServletException {
+        parametersDao = DaoFactory.getInstance().getParametersDao();
         parametersService = ServiceFactory.getInstance().getParametersService();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String userName = (String) req.getSession().getAttribute("current_user");
-        if (parametersService.checkRecorded(userName, EntitiesEnum.FATHER)){
+        if (req.getSession().getAttribute("update") == null & req.getSession().getAttribute("create") == null){
             resp.sendRedirect("/success");
         }else {
             req.getRequestDispatcher("/queue.jsp").forward(req, resp);
@@ -37,32 +40,43 @@ public class QueueServlet extends HttpServlet{
         String userName = (String) req.getSession().getAttribute("current_user");
         resp.setContentType("text/plain;charset=UTF-8");
         resp.setCharacterEncoding("utf-8");
+        if (req.getSession().getAttribute("condition") == null && parametersDao.findHousing(userName).getCondition() != null){
+            req.setAttribute("condition", parametersDao.findHousing(userName).getCondition());
+        }
+        if (req.getSession().getAttribute("children_count") == null && !parametersDao.findChildren(userName).isEmpty()){
+            req.setAttribute("children_count", parametersDao.findChildren(userName).size());
+        }
         if (req.getParameter("save") != null && req.getParameter("save").equals("true")){
-            int condition = Integer.parseInt((String)req.getSession().getAttribute("condition"));
-            int childrenCount = (int)req.getSession().getAttribute("children-count");
+            if (req.getSession().getAttribute("condition") != null && req.getSession().getAttribute("children_count") != null) {
+                int condition = Integer.parseInt((String) req.getSession().getAttribute("condition"));
+                int childrenCount = (int) req.getSession().getAttribute("children_count");
 
-            Promotions.Builder builder = new Promotions.Builder();
+                Promotions.Builder builder = new Promotions.Builder();
 
-            if (condition == 0){
-                builder.setOutOfQueue(true)
-                        .setFirstOfQueue(false);
+                if (condition == 0) {
+                    builder.setOutOfQueue(true)
+                            .setFirstOfQueue(false);
 
-            }else if (condition == 1 || condition == 2){
-                builder.setOutOfQueue(false)
-                        .setFirstOfQueue(true);
-            }else {
-                builder.setOutOfQueue(false)
-                        .setFirstOfQueue(false);
+                } else if (condition == 1 || condition == 2) {
+                    builder.setOutOfQueue(false)
+                            .setFirstOfQueue(true);
+                } else {
+                    builder.setOutOfQueue(false)
+                            .setFirstOfQueue(false);
+                }
+                if (childrenCount != 0 && childrenCount >= 3) {
+                    builder.setPromotions(true);
+                } else {
+                    builder.setPromotions(false);
+                }
+
+                if (!parametersService.checkRecorded(userName, EntitiesEnum.PROMOTIONS)) {
+                    parametersService.save(userName, builder.build());
+                } else {
+                    parametersService.update(userName, builder.build());
+                }
             }
-            if (childrenCount != 0 && childrenCount >= 3){
-                builder.setPromotions(true);
-            }else{
-                builder.setPromotions(false);
-            }
-
-            parametersService.save(userName, builder.build());
-
-            resp.sendRedirect("/success");
+            //resp.sendRedirect("/success");
 
         }else if (req.getParameter("mode").equals("father")){
 
@@ -79,11 +93,17 @@ public class QueueServlet extends HttpServlet{
                         .setPatronymic(patronymic)
                         .build();
                 try {
-                    parametersService.save(userName, father);
+                    if (!parametersService.checkRecorded(userName, EntitiesEnum.FATHER)) {
+                        parametersService.save(userName, father);
+                    } else {
+                        parametersService.update(userName, father);
+                    }
                 }catch (IllegalArgumentException e){
                     e.printStackTrace();
-                    resp.sendError(400);
+                    resp.sendError(400, e.getMessage());
                 }
+            }else {
+                resp.sendError(400);
             }
 
         }else if (req.getParameter("mode").equals("mother")){
@@ -98,11 +118,15 @@ public class QueueServlet extends HttpServlet{
                         .setPatronymic(patronymic)
                         .build();
                 try {
-                    parametersService.save(userName, mother);
+                    if (!parametersService.checkRecorded(userName, EntitiesEnum.MOTHER)) {
+                        parametersService.save(userName, mother);
+                    }
                 }catch (IllegalArgumentException e){
                     e.printStackTrace();
                     resp.sendError(400);
                 }
+            }else {
+                resp.sendError(400);
             }
 
         }else if (req.getParameter("mode").equals("children")){
@@ -110,7 +134,7 @@ public class QueueServlet extends HttpServlet{
             int childrenCount = Integer.parseInt(req.getParameter("children-count"));
             List<Child> children = new LinkedList<>();
 
-            for (int i = 0; i < childrenCount; i++) {
+            for (int i = 0; i < childrenCount + 1; i++) {
                 String surname = req.getParameter("child-surname[" + i + "]");
                 String name = req.getParameter("child-name[" + i + "]");
                 String patronymic = req.getParameter("child-patronymic[" + i + "]");
@@ -125,38 +149,49 @@ public class QueueServlet extends HttpServlet{
             }
             if (!children.isEmpty()){
                 try {
-                    parametersService.saveChildren(userName, children);
+                    if (req.getSession().getAttribute("create") != null) {
+                        parametersService.saveChildren(userName, children);
+                    }else if (req.getSession().getAttribute("update") != null){
+                        parametersService.delete(userName, EntitiesEnum.CHILDREN);
+                        parametersService.saveChildren(userName, children);
+                    }
                 }catch (IllegalArgumentException e){
                     e.printStackTrace();
                     resp.sendError(400);
                 }
+            }else {
+                resp.sendError(400);
             }
-            req.getSession().setAttribute("children_count", childrenCount);
+            req.getSession().setAttribute("children_count", children.size());
 
         }else if (req.getParameter("mode").equals("others")){
 
+            try {
             Wish wish = new Wish.Builder()
                     .setDistrict(req.getParameter("district"))
                     .setRoomsCount(Integer.parseInt(req.getParameter("rooms-count")))
                     .setKindergarden(req.getParameter("kindergarten").equals("true"))
                     .setSchool(req.getParameter("school").equals("true"))
                     .build();
-            try {
-                parametersService.save(userName, wish);
-            }catch (IllegalArgumentException e){
-                e.printStackTrace();
-                resp.sendError(400);
-            }
+                if (!parametersService.checkRecorded(userName, EntitiesEnum.WISHES)) {
+                    parametersService.save(userName, wish);
+                }else {
+                    parametersService.update(userName, wish);
+                }
 
             Housing housing = new Housing.Builder()
                     .setApplicationDate(Date.valueOf(LocalDate.now()))
                     .setCondition(Integer.parseInt(req.getParameter("condition")))
                     .build();
-            try {
-                parametersService.save(userName, housing);
+                if (!parametersService.checkRecorded(userName, EntitiesEnum.HOUSING)) {
+                    parametersService.save(userName, housing);
+                }else {
+                    parametersService.update(userName, housing);
+                }
             }catch (IllegalArgumentException e){
-                e.printStackTrace();
-                resp.sendError(400);
+                //e.printStackTrace();
+                System.out.println(e.getMessage());
+                resp.sendError(400, e.getMessage());
             }
 
             req.getSession().setAttribute("condition", req.getParameter("condition"));

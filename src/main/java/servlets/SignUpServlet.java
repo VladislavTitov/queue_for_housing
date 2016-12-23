@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class SignUpServlet extends HttpServlet {
@@ -41,7 +42,7 @@ public class SignUpServlet extends HttpServlet {
         if (user_name.equals("") || password.equals("") || passConf.equals("") || !password.equals(passConf) || userService.isRegistered(user_name)){
             resp.sendRedirect("/signup");
         }else{
-            userService.save(new User.Builder().setUserName(user_name).setPassword(password).setDateRegistration(LocalDate.now()).build());
+            userService.save(new User.Builder().setUserName(user_name).setPassword(password).setDateRegistration(Date.valueOf(LocalDate.now())).build());
             Cookie cookie = new Cookie("qfhUser", user_name);
             Cookie cookie1 = new Cookie("qfhToken", tokenService.generateToken(user_name));
             if (remember){
@@ -51,6 +52,7 @@ public class SignUpServlet extends HttpServlet {
                 resp.addCookie(cookie1);
             }
             req.getSession().setAttribute("current_user", user_name);
+            req.getSession().setAttribute("create", true);
             resp.sendRedirect("/queue");
         }
 
